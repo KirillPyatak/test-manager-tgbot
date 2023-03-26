@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Чат-менеджер</title>
+<!--    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">-->
+</head>
+<body>
+    <h1>Чат-менеджер</h1>
+    <button onclick="openChat()">Открыть чат</button>
+    <div class="chat-popup" id="myChat">
+        <div class="chat-header">
+            <span>Чат</span>
+            <button type="button" class="close-btn" onclick="closeChat()">&times;</button>
+        </div>
+        <div class="chat-body">
+            <ul id="chat-messages"></ul>
+        </div>
+        <form method="POST" action="{{ url_for('send_message') }}" class="chat-form">
+<!--            <input type="hidden" name="chat_id" value="YOUR_CHAT_ID">-->
+            <input type="text" name="text" placeholder="Введите сообщение...">
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+
+    <script>
+        function openChat() {
+            document.getElementById("myChat").style.display = "block";
+        }
+
+        function closeChat() {
+            document.getElementById("myChat").style.display = "none";
+        }
+    </script>
+</body>
+</html>

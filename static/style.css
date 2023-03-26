@@ -1,0 +1,102 @@
+/* The chat popup (hidden by default) */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 1px solid #ccc;
+  z-index: 9;
+  width: 300px;
+  height: 400px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Add styles to the chat header */
+.chat-header {
+  padding: 10px;
+  background-color: #3b5998;
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Add styles to the close button */
+.close-btn {
+    float: right;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.close-btn:hover {
+    color: #999;
+}
+
+/* Тело чата */
+.chat-body {
+  padding: 10px;
+  height: 320px;
+  overflow-y: scroll;
+}
+
+/* Сообщения чата */
+.chat-message {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+.chat-message p {
+  margin: 0;
+}
+
+/* Форма отправки сообщения */
+.chat-form {
+  display: flex;
+  margin-top: 10px;
+}
+
+.chat-form input[type=text] {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.chat-form button[type="submit"] {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #008CBA;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chat-form button[type=submit] {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #3b5998;
+  color: white;
+  cursor: pointer;
+}
+
+.chat-form button[type=submit]:hover {
+  background-color: #2d4373;
+}
+/* Add styles to the chat button */
+button {
+    padding: 10px;
+    background-color: #008CBA;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #006080;
+}
